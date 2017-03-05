@@ -1,0 +1,318 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+  *******************/
+
+  *, *:before, *:after {
+  	box-sizing: border-box;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+  	content: " "; /* 1 */
+  	display: table; /* 2 */
+  }
+
+  .clearfix:after {
+  	clear: both;
+  }
+
+  .container {
+  	margin: 0 auto;
+  	width: 95%;
+  }
+
+/*******************
+  FONT SETUP
+  *******************/
+
+  body {
+  	font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  h1, .teasers-block h2, .strapline p{
+    font-family: 'Merriweather', serif;
+  }
+
+  a {
+  	font-family: 'Oswald', sans-serif;
+  	text-transform: uppercase;
+    text-decoration: none;
+  }
+
+/*******************
+  GENERAL SETUP
+  *******************/
+
+  html {
+  	font-size: 20px;
+  }
+
+  .cta {
+  	color: black;
+  	text-decoration: none;
+  	padding: 0.75em 0;
+  	width: 100%;
+  	display: block;
+  	text-align: center;
+  	border-radius: 5px;
+  }
+
+  .cta-grey {
+  	border-bottom: 3px solid #999999;
+  	background-color: #C3C3C3;
+  }
+
+  .cta-yellow {
+  	border-bottom: 3px solid #CEC441;
+  	background-color: #FFF653;
+  }
+/*******************
+  HEADER
+  *******************/
+
+  header {
+  	background-color: black;
+  	border-bottom: 5px solid #FFF653;
+  	padding: auto;
+  }
+
+  h1 {
+  	margin: 0;
+    padding-top: .7em;
+    font-size: 1.5rem;
+    float: left;
+  }
+
+  header nav {
+  	float: right;
+  }
+
+  header ul {
+  	margin: 0;
+  }
+
+  header li {
+  	display: inline-block;
+  	margin: 0 0.3em;
+  }
+
+  header li:nth-child(n+3) a {
+  	text-transform: none;
+  }
+
+  header a {
+  	color: white;
+  }
+
+  header h1 a {
+    font-family: 'Merriweather', serif;
+    color: #FFF653;
+  }
+
+  header nav a {
+    display: block;
+    padding: 20px 15px;
+  }
+
+  header nav li a:hover {
+    color:  #FFF653;
+  }
+
+  header nav li.active a {
+    background: #666;
+  }
+
+
+  /*******************
+  STRAPLINE
+  *******************/
+
+  .strapline {
+  	background-color: #C6C6C6;
+  	text-align: center;
+  	padding: 1em 0; /******** PERSONAL NOTES *** usar em paddings e margens****/
+  }
+
+  .strapline p {
+  	margin: 0;
+  	font-style: italic;
+  	font-weight: 1.2rem; /******** PERSONAL NOTES ******1.2 times o ultimo valor dado para a font***** rem vai buscar a de cima de todo da familia. ***/
+  }
+
+  del {
+  	color: #999999;
+  }
+
+  ins{
+  	text-decoration: none;
+  	position: relative;
+  }
+
+  ins:before {
+  	content: "";
+  	height: 3px;
+  	background-color: #FFF653;
+  	width: 100%;
+  	position: absolute;
+  	bottom: -2px;
+  	left: 0;
+  }
+
+  /*******************
+  INTRO
+  *******************/
+  .intro {
+  	background-image: url('../images/coworking.jpg');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+    overflow: hidden;
+    padding: 3%;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+  }
+
+  .intro-content {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	margin-left: auto;
+  	width: 34%;
+  	padding: 1.5em;
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+  }
+
+  .intro-content h2 {
+   margin-top: 0;
+  }
+
+  .intro-content {
+   line-height: 1.6;
+  }
+
+  /*******************
+	TEASERS
+  *******************/
+
+  .teasers {
+   padding: 1em 0;
+  }
+
+  .teasers ul {
+   padding: 0;
+   margin: 0;
+  }
+
+  .teasers-block {
+   border-right: 1px solid #C6C6C6;
+   list-style: none;
+   float: left;
+   width: 33.3333%;
+   padding: 2% 3%;
+  }
+
+  .teasers-block:last-child {
+   border: none;
+  }
+
+  .teasers-block h2 {
+   font-size: 1.2rem;
+   margin: 0.75em 0;
+  }
+
+  .teasers-block p {
+   line-height: 1.6;
+  }
+
+
+  /***********
+  PROFILES
+  *********/
+
+  .profiles {
+    background: #C6C6C6;
+    padding: 10px;
+  }
+
+  .cards {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+  }
+
+  .card {
+    float: left;
+    width: 25%;
+  }
+
+  .card img {
+   width: 100%;
+  }
+ 
+  .card p {
+   margin: 0;
+  }
+
+  .card article {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .cards figure {
+    margin: 0;
+  }
+
+  .card .cta-yellow {
+    font-size: .75em;
+}
+
+.card .button {
+  font-size: .75em;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.tags {
+  overflow: hidden;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.tags li {
+  float: left;
+}
+
+.tags li a {
+  display: block;
+  background: #666;
+  padding: 1px 12px;
+  border-radius: 100px;
+  font-size: .75em;
+  margin: 0 5px 5px 0;
+  color: white;
+}
+
+
+ /*******************
+	FOOTER
+  *******************/
+
+
+footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1em 0;
+  float: left;
+}
